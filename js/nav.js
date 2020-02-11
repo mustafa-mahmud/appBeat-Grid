@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	//toggle class
 	logoNavMobile.addEventListener("click", function () {
 		mobileBar.classList.toggle("animateNav");
+		this.classList.toggle("allNav");
 	});
 
 });
