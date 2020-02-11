@@ -1,0 +1,89 @@
+//title
+.title-1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: $mon;
+  color: #ffffff;
+}
+.title-2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: $mon;
+  color: #000000;
+}
+.title-3 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  font-family: $mon;
+  color: #000000;
+}
+.title-4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: $mon;
+  color: #000000;
+}
+//text align
+.t-center {
+  text-align: center;
+}
+
+//text transform
+
+.t-cap {
+  text-transform: capitalize;
+}
+
+.t-up {
+  text-transform: uppercase;
+}
+
+//text bold
+
+.bold {
+  font-weight: bold;
+}
+
+//font color
+
+.c-white {
+  color: #ffffff;
+}
+
+.c-brown {
+  color: #7202bb;
+}
+
+.c-light {
+  color: #222222;
+}
+
+.c-light-2 {
+  color: #828bb2;
+}
+
+.h-white {
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.h-brown {
+  &:hover {
+    color: #8933f8;
+  }
+}
+
+.p-small {
+  font-size: 1.5rem;
+  @include p;
+}
+.p-big {
+  font-size: 1.8rem;
+  @include p;
+}
+
+//line height
+.l-h-1 {
+  line-height: 1;
+}

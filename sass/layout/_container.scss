@@ -1,0 +1,72 @@
+.container {
+	display: grid;
+	grid-template-rows: [header-start] max-content [header-end] repeat(11,
+			[row-start] min-content [row-end]);
+	grid-template-columns:
+		[full-start] minmax(5rem, 1fr) [center-start] repeat(12,
+			[col-start] 1fr [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+
+	&>* {
+		font-size: 2rem;
+	}
+}
+
+#header {
+	grid-row: header-start/header-end;
+	grid-column: full-start/full-end;
+}
+
+#need {
+	grid-row: row-start 1 / row-end 1;
+	grid-column: center-start/center-end;
+}
+
+#feature {
+	grid-row: row-start 2 / row-end 2;
+	grid-column: center-start/center-end;
+}
+
+#tabFea {
+	grid-row: row-start 3 / row-end 3;
+	grid-column: center-start/center-end;
+}
+
+#slider {
+	grid-row: row-start 4 / row-end 4;
+	grid-column: center-start/center-end;
+}
+
+#download {
+	grid-row: row-start 5 / row-end 5;
+	grid-column: full-start/full-end;
+}
+
+#testimonial {
+	grid-row: row-start 6 / row-end 6;
+	grid-column: center-start/center-end;
+}
+
+#compare {
+	grid-row: row-start 7 / row-end 7;
+	grid-column: center-start/center-end;
+}
+
+#asked {
+	grid-row: row-start 8 / row-end 8;
+	grid-column: center-start/center-end;
+}
+
+#slider2 {
+	grid-row: row-start 9 / row-end 9;
+	grid-column: center-start/center-end;
+}
+
+#contact {
+	grid-row: row-start 10 / row-end 10;
+	grid-column: center-start/center-end;
+}
+
+#footer {
+	grid-row: row-start 11 / row-end 11;
+	grid-column: full-start/full-end;
+}

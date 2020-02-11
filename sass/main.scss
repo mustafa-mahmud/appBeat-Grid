@@ -1,0 +1,33 @@
+//abstract
+@import "abstract/variable";
+@import "abstract/mixin";
+@import "abstract/extend";
+@import "abstract/function";
+
+//base
+@import "base/base";
+@import "base/typo";
+
+//component
+@import "component/utilities";
+@import "component/button";
+@import "component/nav";
+
+//layout
+@import "layout/container";
+@import "layout/header";
+@import "layout/need";
+@import "layout/feature";
+@import "layout/tabFea";
+@import "layout/slider";
+@import "layout/download";
+@import "layout/testimonial";
+@import "layout/compare";
+@import "layout/asked";
+@import "layout/slider2";
+@import "layout/contact";
+@import "layout/footer";
+
+//page
+@import "page/home/header";
+@import "page/home/footer";

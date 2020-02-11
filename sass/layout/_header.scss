@@ -1,0 +1,28 @@
+#header {
+	display: grid;
+	grid-template-columns:
+		[full-start] minmax(5rem, 1fr) [center-start] repeat(12,
+			[col-start] 1fr [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+
+	.headerContainer {
+		grid-column: center-start/center-end;
+	}
+
+	.logoNav {
+		display: grid;
+		grid-template-columns: 150px 1fr;
+		column-gap: 10rem;
+	}
+
+	.campain {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(30rem, 1fr));
+		column-gap: 5rem;
+		justify-items: flex-end;
+		padding: 10rem 0;
+
+		&__info {
+			align-self: center;
+		}
+	}
+}

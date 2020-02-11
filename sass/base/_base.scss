@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.h-100 {
+	height: 100% !important;
+}
+
+.o-fit {
+	object-fit: cover !important;
+}
+
+.d-block {
+	display: block !important;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-ib {
+	display: inline-block;
+}
+
+.p-relative {
+	position: relative !important;
+}
+
+.p-absolute {
+	position: absolute !important;
+}
+
+.b-none {
+	border: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+
+html {
+	font-size: 62.5%; //10/16=0.625
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 200rem;
+}

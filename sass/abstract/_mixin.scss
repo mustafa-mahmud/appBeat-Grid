@@ -1,0 +1,44 @@
+@mixin btn {
+	display: inline-block;
+	border-radius: 100px;
+	padding: 10px 30px;
+	transition: all 0.1s linear;
+	cursor: pointer;
+
+	a {
+		text-transform: capitalize;
+		font-weight: bold;
+		font-family: $mon;
+		font-size: $f-1-6;
+	}
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	&--white {
+		border: 1px solid #ffffff;
+	}
+
+	&--brown {
+		border: 1px solid #7202bb;
+	}
+}
+
+@mixin p {
+	line-height: 27px;
+	font-family: $sans;
+	font-weight: 400;
+}
+
+@mixin backImg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin mobileMenu {
+	content: "";
+	position: absolute;
+	@extend %mobileMenu;
+}

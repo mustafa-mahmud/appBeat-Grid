@@ -1,0 +1,20 @@
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 5rem;
+}
+.btn-1 {
+  background-color: #ffffff;
+  @include btn;
+}
+.btn-2 {
+  background-color: transparent;
+  @include btn;
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+.btn-3 {
+  background-color: #7202bb;
+  @include btn;
+}
