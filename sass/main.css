@@ -12,6 +12,16 @@
   transition: all 0.1s linear;
 }
 
+.need__box span::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 4rem;
+}
+
 *,
 *::before,
 *::after {
@@ -78,21 +88,18 @@ body {
   font-size: 4.5rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  color: #ffffff;
 }
 
 .title-2 {
   font-size: 3.5rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  color: #000000;
 }
 
 .title-3 {
   font-size: 2.9rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  color: #000000;
 }
 
 .title-4 {
@@ -651,6 +658,17 @@ body {
   align-self: center;
 }
 
+.need__boxContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(2.5rem, 1fr));
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+
+.container {
+  position: relative;
+}
+
 #header {
   position: relative;
   background-image: linear-gradient(to right, #6703a9, #305adc);
@@ -658,6 +676,10 @@ body {
 
 #header .headerContainer {
   padding: 2rem 0;
+}
+
+#header .campain__info h1 {
+  color: #ffffff;
 }
 
 #header .campain__img {
@@ -670,5 +692,65 @@ body {
   bottom: 0;
   left: 0;
   display: inherit;
+}
+
+.need {
+  padding: 5rem 0;
+}
+
+.need__info h1 {
+  color: #000000;
+}
+
+.need__info p {
+  padding: 2rem 0;
+  color: #222222;
+}
+
+.need__boxContainer {
+  padding: 3rem 0;
+}
+
+.need__box {
+  padding: 3rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.need__box span {
+  display: inline-block;
+  width: 10rem;
+  height: 8rem;
+  background-image: url("../img/promo-icon-bg.svg");
+  background-size: 170px;
+  background-position: center -35px;
+  position: relative;
+}
+
+.need__box h3 {
+  color: #000000;
+  padding: 1rem 0;
+}
+
+.need__box p {
+  color: #222222;
+}
+
+.need__box--1 span::before {
+  content: '\f2dc';
+}
+
+.need__box--2 span::before {
+  content: '\f069';
+}
+
+.need__box--3 span::before {
+  content: '\f0c2';
+}
+
+.need__box:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

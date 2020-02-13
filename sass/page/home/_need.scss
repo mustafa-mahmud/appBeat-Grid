@@ -1,1 +1,71 @@
-.need {}
+.need {
+	padding: 5rem 0;
+
+	&__info {
+		h1 {
+			color: $c-black;
+		}
+
+		p {
+			padding: 2rem 0;
+			color: $c-light;
+		}
+	}
+
+	&__boxContainer {
+		padding: 3rem 0;
+	}
+
+	&__box {
+		padding: 3rem;
+		border-radius: 2rem;
+		transition: all 0.3s ease-in-out;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+
+		span {
+			display: inline-block;
+			width: 10rem;
+			height: 8rem;
+			background-image: url('../img/promo-icon-bg.svg');
+			background-size: 170px;
+			background-position: center -35px;
+			position: relative;
+
+			&::before {
+				@extend %needSpan;
+			}
+		}
+
+		h3 {
+			color: $c-black;
+			padding: 1rem 0;
+		}
+
+		p {
+			color: $c-light;
+		}
+
+		&--1 span {
+			&::before {
+				content: '\f2dc';
+			}
+		}
+
+		&--2 span {
+			&::before {
+				content: '\f069';
+			}
+		}
+
+		&--3 span {
+			&::before {
+				content: '\f0c2';
+			}
+		}
+	}
+
+	&__box:hover {
+		transform: translateY(-2rem);
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	}
+}
