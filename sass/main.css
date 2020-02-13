@@ -667,8 +667,8 @@ body {
 #header .shape-svg {
   width: 100%;
   position: absolute;
-  height: 119px;
   bottom: 0;
   left: 0;
+  display: inherit;
 }
 /*# sourceMappingURL=main.css.map */
