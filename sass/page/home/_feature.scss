@@ -1,0 +1,53 @@
+.feature {
+	&__titlePara {
+		padding: 6rem 0;
+
+		h1 {
+			padding: 2rem 0;
+		}
+
+		p {
+			color: $c-light-2;
+		}
+	}
+
+	&__boxContainer {}
+
+	&__box1 {
+		align-self: center;
+	}
+
+	&__box2 {
+		align-self: center;
+	}
+
+	&__box3 {
+		align-self: center;
+	}
+
+	&__details {
+		div {
+			text-align: left;
+			margin-bottom: 5rem;
+
+			span {
+				width: 7rem;
+				height: 7rem;
+				border-radius: 5px;
+				display: inline-block;
+				background-color: #F8D5DD;
+				text-align: center;
+				font-size: $f-3;
+				line-height: 7rem;
+			}
+
+			h3 {
+				padding-bottom: 1rem;
+			}
+
+			p {
+				color: $c-light-2;
+			}
+		}
+	}
+}

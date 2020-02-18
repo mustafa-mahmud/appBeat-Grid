@@ -23,6 +23,8 @@ font-family: 'Open Sans', sans-serif;
 </head>
 
 <body class="container">
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>> -->
 	<header id="header">
 		<div class="headerContainer">
 			<!-- top -->
@@ -152,6 +154,9 @@ font-family: 'Open Sans', sans-serif;
 		</div>
 		<!-- shape end -->
 	</header>
+	<!-- <<<<<<<<<<<<<<<<<<<<< header end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< need >>>>>>>>>>>>>>>>>>>>>>>> -->
 	<section id="need" class="need">
 		<div class="need__info">
 			<h1 class="title-1">Why You Need AppBeats</h1>
@@ -183,18 +188,168 @@ font-family: 'Open Sans', sans-serif;
 			</div>
 		</div>
 	</section>
-	<section id="feature" class="blue">Feature</section>
-	<section id="tabFea" class="coral">tabFea</section>
-	<section id="slider" class="brown">Slider</section>
-	<section id="download" class="yellow">Download</section>
-	<section id="testimonial" class="olive">Testimonial</section>
-	<section id="compare" class="gray">Compare</section>
-	<section id="asked" class="crimson">Asked</section>
-	<section id="slider2" class="green">Slider2</section>
-	<section id="contact" class="pink">Contact</section>
-	<footer id="footer" class="coral">Footer</footer>
+	<!-- <<<<<<<<<<<<<<<<<<<<< need end >>>>>>>>>>>>>>>>>>>>>>>> -->
 
+	<!-- <<<<<<<<<<<<<<<<<<<<< feature >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="feature" class="feature t-center">
+		<div class="feature__titlePara">
+			<h1 class="title-1">
+				Quick & Easy Process With Best Features
+			</h1>
+			<p class="p-small">
+				Objectively deliver professional value with diverse web-readiness. Collaboratively transition wireless customer
+				service
+				without goal-oriented catalysts for change. Collaboratively.
+			</p>
+		</div>
+		<div class="feature__boxContainer">
+			<div class="feature__box1">
+				<div class="feature__details">
+					<div>
+						<span><i class="fa fa-anchor" aria-hidden="true"></i></span>
+						<h3 class="title-4">Responsive web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+					<div>
+						<span><i class="fa fa-grav" aria-hidden="true"></i></span>
+						<h3 class="title-4">Lorem web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+					<div>
+						<span><i class="fa fa-ravelry" aria-hidden="true"></i></span>
+						<h3 class="title-4">Ipsum web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+				</div>
+			</div>
+			<div class="feature__box2">
+				<img class="w-100" src="img/image-10.png" alt="">
+			</div>
+			<div class="feature__box3">
+				<div class="feature__details">
+					<div>
+						<span><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+						<h3 class="title-4">Snow web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+					<div>
+						<span><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i></span>
+						<h3 class="title-4">Assistive web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+					<div>
+						<span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+						<h3 class="title-4">Responsive web design</h3>
+						<p class="p-small">Modular and interchangable componente between layouts and even demos.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< feature end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< tabFea >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="tabFea" class="tabFea">
+		<div class="tab">
+			<button class="tablinks active" onclick="openCity(event, 'idea')">Generate Ideas</button>
+			<button class="tablinks" onclick="openCity(event, 'content')">Collect Contents</button>
+			<button class="tablinks" onclick="openCity(event, 'design')">Create Design</button>
+			<button class="tablinks" onclick="openCity(event, 'project')">Launch Project</button>
+		</div>
+
+		<div id="idea" class="tabcontent" style='display:block;'>
+			<h3>01.</h3>
+			<p>London is the capital city of England.</p>
+		</div>
+
+		<div id="content" class="tabcontent">
+			<h3>02.</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div id="design" class="tabcontent">
+			<h3>03.</h3>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+
+		<div id="project" class="tabcontent">
+			<h3>04.</h3>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+		<!-- 
+			function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		 -->
+	</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< tabFea End >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< slider >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="slider" class="red">Slider</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< slider  End >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< download >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="download" class="yellow">Download</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< download end>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< testimonial >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="testimonial" class="olive">Testimonial</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< testimonial end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< compare >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="compare" class="gray">Compare</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< compare end>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< asked >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="asked" class="crimson">Asked</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< asked end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< slider2 >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="slider2" class="green">Slider2</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< slider2 end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< contact >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<section id="contact" class="pink">Contact</section>
+	<!-- <<<<<<<<<<<<<<<<<<<<< contact end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>> -->
+	<footer id="footer" class="coral">Footer</footer>
+	<!-- <<<<<<<<<<<<<<<<<<<<< footer end >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< JS >>>>>>>>>>>>>>>>>>>>>>>> -->
 	<script src="js/nav.js"></script>
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+
+	<!-- <<<<<<<<<<<<<<<<<<<<< JS END >>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+	<!-- <<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>> -->
 </body>
 
 </html>

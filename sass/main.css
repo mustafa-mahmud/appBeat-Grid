@@ -561,6 +561,39 @@ body {
   transform: translate(40px, 0px) rotate(-45deg);
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
 .container {
   display: grid;
   grid-template-rows: [header-start] max-content [header-end] repeat(11, [row-start] min-content [row-end]);
@@ -665,6 +698,25 @@ body {
   row-gap: 5rem;
 }
 
+.feature__boxContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(2.5rem, 1fr));
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+
+.feature__details div {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: 7rem 1fr;
+  column-gap: 2rem;
+}
+
+.feature__details div span {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
 .container {
   position: relative;
 }
@@ -752,5 +804,57 @@ body {
 .need__box:hover {
   transform: translateY(-2rem);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature__titlePara {
+  padding: 6rem 0;
+}
+
+.feature__titlePara h1 {
+  padding: 2rem 0;
+}
+
+.feature__titlePara p {
+  color: #444444;
+}
+
+.feature__box1 {
+  align-self: center;
+}
+
+.feature__box2 {
+  align-self: center;
+}
+
+.feature__box3 {
+  align-self: center;
+}
+
+.feature__details div {
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.feature__details div span {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #F8D5DD;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 7rem;
+}
+
+.feature__details div h3 {
+  padding-bottom: 1rem;
+}
+
+.feature__details div p {
+  color: #444444;
+}
+
+.tabFea {
+  padding: 10rem 0;
 }
 /*# sourceMappingURL=main.css.map */
